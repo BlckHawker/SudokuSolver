@@ -35,25 +35,359 @@ namespace SudokuSolver
         {
             Grid = new Cell[,]
             {
-
+                 { InitializeCell(row1Column1), InitializeCell(row1Column2), InitializeCell(row1Column3), InitializeCell(row1Column4), InitializeCell(row1Column5), InitializeCell(row1Column6), InitializeCell(row1Column7), InitializeCell(row1Column8), InitializeCell(row1Column9)},
+                 { InitializeCell(row2Column1), InitializeCell(row2Column2), InitializeCell(row2Column3), InitializeCell(row2Column4), InitializeCell(row2Column5), InitializeCell(row2Column6), InitializeCell(row2Column7), InitializeCell(row2Column8), InitializeCell(row2Column9)},
+                 { InitializeCell(row3Column1), InitializeCell(row3Column2), InitializeCell(row3Column3), InitializeCell(row3Column4), InitializeCell(row3Column5), InitializeCell(row3Column6), InitializeCell(row3Column7), InitializeCell(row3Column8), InitializeCell(row3Column9)},
+                 { InitializeCell(row4Column1), InitializeCell(row4Column2), InitializeCell(row4Column3), InitializeCell(row4Column4), InitializeCell(row4Column5), InitializeCell(row4Column6), InitializeCell(row4Column7), InitializeCell(row4Column8), InitializeCell(row4Column9)},
+                 { InitializeCell(row5Column1), InitializeCell(row5Column2), InitializeCell(row5Column3), InitializeCell(row5Column4), InitializeCell(row5Column5), InitializeCell(row5Column6), InitializeCell(row5Column7), InitializeCell(row5Column8), InitializeCell(row5Column9)},
+                 { InitializeCell(row6Column1), InitializeCell(row6Column2), InitializeCell(row6Column3), InitializeCell(row6Column4), InitializeCell(row6Column5), InitializeCell(row6Column6), InitializeCell(row6Column7), InitializeCell(row6Column8), InitializeCell(row6Column9)},
+                 { InitializeCell(row7Column1), InitializeCell(row7Column2), InitializeCell(row7Column3), InitializeCell(row7Column4), InitializeCell(row7Column5), InitializeCell(row7Column6), InitializeCell(row7Column7), InitializeCell(row7Column8), InitializeCell(row7Column9)},
+                 { InitializeCell(row8Column1), InitializeCell(row8Column2), InitializeCell(row8Column3), InitializeCell(row8Column4), InitializeCell(row8Column5), InitializeCell(row8Column6), InitializeCell(row8Column7), InitializeCell(row8Column8), InitializeCell(row8Column9)},
+                 { InitializeCell(row9Column1), InitializeCell(row9Column2), InitializeCell(row9Column3), InitializeCell(row9Column4), InitializeCell(row9Column5), InitializeCell(row9Column6), InitializeCell(row9Column7), InitializeCell(row9Column8), InitializeCell(row9Column9)}
             };
+
+            TopLeft = new List<Cell>();
+
+
+            TopLeft.Add(Grid[0, 0]);
+            TopLeft.Add(Grid[0, 1]);
+            TopLeft.Add(Grid[0, 2]);
+            TopLeft.Add(Grid[1, 0]);
+            TopLeft.Add(Grid[1, 1]);
+            TopLeft.Add(Grid[1, 2]);
+            TopLeft.Add(Grid[2, 0]);
+            TopLeft.Add(Grid[2, 1]);
+            TopLeft.Add(Grid[2, 2]);
+
+            TopMid.Add(Grid[0, 3]);
+            TopMid.Add(Grid[0, 4]);
+            TopMid.Add(Grid[0, 5]);
+            TopMid.Add(Grid[1, 3]);
+            TopMid.Add(Grid[1, 4]);
+            TopMid.Add(Grid[1, 5]);
+            TopMid.Add(Grid[2, 3]);
+            TopMid.Add(Grid[2, 4]);
+            TopMid.Add(Grid[2, 5]);
+
+            TopRight.Add(Grid[0, 6]);
+            TopRight.Add(Grid[0, 7]);
+            TopRight.Add(Grid[0, 8]);
+            TopRight.Add(Grid[1, 6]);
+            TopRight.Add(Grid[1, 7]);
+            TopRight.Add(Grid[1, 8]);
+            TopRight.Add(Grid[2, 6]);
+            TopRight.Add(Grid[2, 7]);
+            TopRight.Add(Grid[2, 8]);
+
+            MidLeft.Add(Grid[3, 0]);
+            MidLeft.Add(Grid[3, 1]);
+            MidLeft.Add(Grid[3, 2]);
+            MidLeft.Add(Grid[4, 0]);
+            MidLeft.Add(Grid[4, 1]);
+            MidLeft.Add(Grid[4, 2]);
+            MidLeft.Add(Grid[5, 0]);
+            MidLeft.Add(Grid[5, 1]);
+            MidLeft.Add(Grid[5, 2]);
+
+            Mid.Add(Grid[3, 3]);
+            Mid.Add(Grid[3, 4]);
+            Mid.Add(Grid[3, 5]);
+            Mid.Add(Grid[4, 3]);
+            Mid.Add(Grid[4, 4]);
+            Mid.Add(Grid[4, 5]);
+            Mid.Add(Grid[5, 3]);
+            Mid.Add(Grid[5, 4]);
+            Mid.Add(Grid[5, 5]);
+
+            MidRight.Add(Grid[3, 6]);
+            MidRight.Add(Grid[3, 7]);
+            MidRight.Add(Grid[3, 8]);
+            MidRight.Add(Grid[4, 6]);
+            MidRight.Add(Grid[4, 7]);
+            MidRight.Add(Grid[4, 8]);
+            MidRight.Add(Grid[5, 6]);
+            MidRight.Add(Grid[5, 7]);
+            MidRight.Add(Grid[5, 8]);
+
+            BottomLeft.Add(Grid[6, 0]);
+            BottomLeft.Add(Grid[6, 1]);
+            BottomLeft.Add(Grid[6, 2]);
+            BottomLeft.Add(Grid[7, 0]);
+            BottomLeft.Add(Grid[7, 1]);
+            BottomLeft.Add(Grid[7, 2]);
+            BottomLeft.Add(Grid[8, 0]);
+            BottomLeft.Add(Grid[8, 1]);
+            BottomLeft.Add(Grid[8, 2]);
+
+            BottomMid.Add(Grid[6, 3]);
+            BottomMid.Add(Grid[6, 4]);
+            BottomMid.Add(Grid[6, 5]);
+            BottomMid.Add(Grid[7, 3]);
+            BottomMid.Add(Grid[7, 4]);
+            BottomMid.Add(Grid[7, 5]);
+            BottomMid.Add(Grid[8, 3]);
+            BottomMid.Add(Grid[8, 4]);
+            BottomMid.Add(Grid[8, 5]);
+
+            BottomRight.Add(Grid[6, 6]);
+            BottomRight.Add(Grid[6, 7]);
+            BottomRight.Add(Grid[6, 8]);
+            BottomRight.Add(Grid[7, 6]);
+            BottomRight.Add(Grid[7, 7]);
+            BottomRight.Add(Grid[7, 8]);
+            BottomRight.Add(Grid[8, 6]);
+            BottomRight.Add(Grid[8, 7]);
+            BottomRight.Add(Grid[8, 8]);
+
         }
 
+        /// <summary>
+        /// Creates a cell given a number
+        /// </summary>
+        /// <param name="str">the number that will be placed in that cell</param>
+        /// <returns>a cell with the given number. (The number will be 0 if the string is empty)</returns>
+        private Cell InitializeCell(string str)
+        {
+            if (str.Length == 0)
+            {
+                return new Cell(0);
+            }
+
+            return new Cell(int.Parse(str));
+        }
+
+        /// <summary>
+        /// Checks to see if the puzzle is 
+        /// valid and slowly fills it in
+        /// </summary>
+        public void Solve()
+        {
+            PrintGrid();
+            //check to see if the puzzle is valid
+            if (!ValidPuzzle())
+            {
+                return;
+            }
+        }
+
+        /// <summary>
+        /// Tells if a puzzle has any mistakes
+        /// </summary>
+        /// <returns>false if an invalid move has been found</returns>
         private bool ValidPuzzle()
-        { 
-            
+        {
+            //a puzzle is invalid if:
+
+            //there is a duplicate number in a row or column
+            for (int i = 0; i < 9; i++)
+            {
+                if (!ValidSpace(GetRow(i)))
+                {
+                    return false;
+                }
+
+                if (!ValidSpace(GetColumn(i)))
+                {
+                    return false;
+                }
+            }
+
+            //there is a duplicate number in a category
+            if (!ValidSpace(GetCategory(TopLeft)))
+            {
+                return false;
+            }
+
+            if (!ValidSpace(GetCategory(TopMid)))
+            {
+                return false;
+            }
+
+            if (!ValidSpace(GetCategory(TopRight)))
+            {
+                return false;
+            }
+
+            if (!ValidSpace(GetCategory(MidLeft)))
+            {
+                return false;
+            }
+
+            if (!ValidSpace(GetCategory(Mid)))
+            {
+                return false;
+            }
+
+            if (!ValidSpace(GetCategory(MidRight)))
+            {
+                return false;
+            }
+
+            if (!ValidSpace(GetCategory(BottomLeft)))
+            {
+                return false;
+            }
+
+            if (!ValidSpace(GetCategory(BottomMid)))
+            {
+                return false;
+            }
+
+            if (!ValidSpace(GetCategory(BottomRight)))
+            {
+                return false;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Tells if an array of numbers is valid
+        /// </summary>
+        /// <param name="arr">the set of numbers that is being checked</param>
+        /// <returns>false if there are any duplicate numbers between 1-9</returns>
+        private bool ValidSpace(int[] arr)
+        {
+            if (TargetNum(arr, 1) > 1)
+            {
+                return false;
+            }
+
+            if (TargetNum(arr, 2) > 1)
+            {
+                return false;
+            }
+
+            if (TargetNum(arr, 3) > 1)
+            {
+                return false;
+            }
+
+            if (TargetNum(arr, 4) > 1)
+            {
+                return false;
+            }
+
+            if (TargetNum(arr, 5) > 1)
+            {
+                return false;
+            }
+
+            if (TargetNum(arr, 6) > 1)
+            {
+                return false;
+            }
+
+            if (TargetNum(arr, 7) > 1)
+            {
+                return false;
+            }
+
+
+            if (TargetNum(arr, 8) > 1)
+            {
+                return false;
+            }
+
+            if (TargetNum(arr, 9) > 1)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// Gets an array of integers from a certain category
+        /// </summary>
+        /// <param name="cellCategory">the category that the numbers will be pulled from</param>
+        /// <returns>An array of the number</returns>
+        private int[] GetCategory(List<Cell> cellCategory)
+        {
+            List<int> numberCategory = new List<int>();
+
+            foreach (Cell c in cellCategory)
+            {
+                numberCategory.Add(c.Num);
+            }
+
+            return numberCategory.ToArray();
+        }
+
+        /// <summary>
+        /// Gets a row from the puzzle
+        /// </summary>
+        /// <param name="row">the row that will be gotten</param>
+        /// <returns>An array of the number</returns>
+        private int[] GetRow(int row)
+        {
+            return new int[] {Grid[row, 0].Num, Grid[row, 1].Num, Grid[row, 2].Num,
+                              Grid[row, 3].Num, Grid[row, 4].Num, Grid[row, 5].Num,
+                              Grid[row, 6].Num, Grid[row, 7].Num, Grid[row, 8].Num,
+                              Grid[row, 9].Num};
+        }
+
+        /// <summary>
+        /// Finds how many times a number is found in an array
+        /// </summary>
+        /// <param name="row">the array of numbers</param>
+        /// <param name="target">the number we are looking for</param>
+        /// <returns>the number of times target is found in an array</returns>
+        private int TargetNum(int[] arr, int target)
+        {
+            int num = 0;
+
+            foreach (int n in arr)
+            {
+                if (n == target)
+                {
+                    num++;
+                }
+            }
+
+            return num;
+        }
+
+        /// <summary>
+        /// Gets a row in the puzzle
+        /// </summary>
+        /// <param name="column">the row that will be gotten</param>
+        /// <returns>An array of the number</returns>
+        private int[] GetColumn(int column)
+        {
+            return new int[] {Grid[0, column].Num, Grid[1, column].Num, Grid[2, column].Num,
+                              Grid[3, column].Num, Grid[4, column].Num, Grid[5, column].Num,
+                              Grid[6, column].Num, Grid[7, column].Num, Grid[8, column].Num,
+                              Grid[9, column].Num};
+        }
+
+        private void PrintGrid()
+        {
+            for (int row = 0; row < 9; row++)
+            {
+                for (int column = 0; column < 9; column++)
+                {
+                    Console.Write(Grid[row, column] + " ");
+                }
+
+                Console.WriteLine();
+            }
         }
 
         /// <summary>
         /// Represents a square on the puzzle
         /// </summary>
-        private class Cell
+        public class Cell
         {
-            int num;
+            public int Num { get; set; }
+
+            //the possible numbers that can go in this cell
+            public List<int> PossibleNumbers { get; }
 
             public Cell(int num)
             {
-                this.num = num;
+                Num = num;
+                PossibleNumbers = new List<int>();
             }
         }
     }

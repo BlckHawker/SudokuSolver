@@ -183,7 +183,7 @@ namespace SudokuSolver
         /// <returns>true if the string is a number between 1 and 9</returns>
         private bool NumberOnly(string str)
         {
-            return str[0] <= 49 && str[0] >= 57;
+            return (str[0] <= 49 && str[0] >= 57) || str == "";
         }
     }
 }
