@@ -170,10 +170,58 @@ namespace SudokuSolver
         public void Solve()
         {
             PrintGrid();
+
             //check to see if the puzzle is valid
             if (!ValidPuzzle())
             {
                 return;
+            }
+
+            FindPossibleNumbers();
+        }
+
+        /// <summary>
+        /// Will find all possible numbers each cell could be
+        /// </summary>
+        private void FindPossibleNumbers()
+        {
+            for (int row = 0; row < 9; row++)
+            {
+                for (int column = 0; column < 9; column++)
+                {
+                    //no need to find possible numbers for non blank cells
+                    if (Grid[row, column].Num != 0)
+                    {
+                        continue;
+                    }
+
+                    //check in each row, column, and category what numbers are missing
+                    int[] rowArr = GetRow(row);
+                    int[] colArr = GetColumn(column);
+                    int[] catArr = GetCategory(FindCategory(row, column));
+
+                    for (int target = 1; target < 10; target++)
+                    {
+                        if (TargetNum(rowArr, target) == 0)
+                        {
+                            Grid[row, column].PossibleNumbers.Add(target);
+                        }
+
+                        if (TargetNum(colArr, target) == 0)
+                        {
+                            Grid[row, column].PossibleNumbers.Add(target);
+                        }
+
+                        if (TargetNum(catArr, target) == 0)
+                        {
+                            Grid[row, column].PossibleNumbers.Add(target);
+                        }
+                    }
+
+                    //make sure there are no duplicates
+                    Grid[row, column].PossibleNumbers = Grid[row, column].PossibleNumbers.Distinct().ToList();
+                }
+
             }
         }
 
@@ -322,6 +370,57 @@ namespace SudokuSolver
         }
 
         /// <summary>
+        ///  Tells which category a cell belongs to
+        /// </summary>
+        /// <param name="row">the row to the cell</param>
+        /// <param name="column">the column to the cell</param>
+        /// <returns></returns>
+        private List<Cell> FindCategory(int row, int column)
+        {
+            if (TopLeft.IndexOf(Grid[row, column]) != -1)
+            {
+                return TopLeft;
+            }
+
+            if (TopMid.IndexOf(Grid[row, column]) != -1)
+            {
+                return TopMid;
+            }
+
+            if (TopRight.IndexOf(Grid[row, column]) != -1)
+            {
+                return TopRight;
+            }
+
+            if (MidLeft.IndexOf(Grid[row, column]) != -1)
+            {
+                return MidLeft;
+            }
+
+            if (Mid.IndexOf(Grid[row, column]) != -1)
+            {
+                return Mid;
+            }
+
+            if (MidRight.IndexOf(Grid[row, column]) != -1)
+            {
+                return MidRight;
+            }
+
+            if (BottomLeft.IndexOf(Grid[row, column]) != -1)
+            {
+                return BottomLeft;
+            }
+
+            if (BottomMid.IndexOf(Grid[row, column]) != -1)
+            {
+                return BottomMid;
+            }
+
+            return BottomRight;
+        }
+
+        /// <summary>
         /// Gets a row from the puzzle
         /// </summary>
         /// <param name="row">the row that will be gotten</param>
@@ -376,7 +475,15 @@ namespace SudokuSolver
             {
                 for (int column = 0; column < 9; column++)
                 {
-                    Console.Write(Grid[row, column].Num + " ");
+                    if (Grid[row, column].Num == 0)
+                    {
+                        Console.Write("- ");
+                    }
+
+                    else
+                    { 
+                        Console.Write(Grid[row, column].Num + " ");
+                    }
                 }
 
                 Console.WriteLine();
@@ -391,7 +498,7 @@ namespace SudokuSolver
             public int Num { get; set; }
 
             //the possible numbers that can go in this cell
-            public List<int> PossibleNumbers { get; }
+            public List<int> PossibleNumbers { get; set; }
 
             public Cell(int num)
             {
