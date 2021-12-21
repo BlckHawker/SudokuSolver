@@ -163,7 +163,7 @@ namespace SudokuSolver
                 row8Column1, row8Column2, row8Column3, row8Column4, row8Column5, row8Column6, row8Column7, row8Column8, row8Column9,
                 row9Column1, row9Column2, row9Column3, row9Column4, row9Column5, row9Column6, row9Column7, row9Column8, row9Column9);
 
-
+            solver.Solve();
         }
 
         /// <summary>

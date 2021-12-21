@@ -330,8 +330,19 @@ namespace SudokuSolver
         {
             return new int[] {Grid[row, 0].Num, Grid[row, 1].Num, Grid[row, 2].Num,
                               Grid[row, 3].Num, Grid[row, 4].Num, Grid[row, 5].Num,
-                              Grid[row, 6].Num, Grid[row, 7].Num, Grid[row, 8].Num,
-                              Grid[row, 9].Num};
+                              Grid[row, 6].Num, Grid[row, 7].Num, Grid[row, 8].Num};
+        }
+
+        /// <summary>
+        /// Gets a row in the puzzle
+        /// </summary>
+        /// <param name="column">the row that will be gotten</param>
+        /// <returns>An array of the number</returns>
+        private int[] GetColumn(int column)
+        {
+            return new int[] {Grid[0, column].Num, Grid[1, column].Num, Grid[2, column].Num,
+                              Grid[3, column].Num, Grid[4, column].Num, Grid[5, column].Num,
+                              Grid[6, column].Num, Grid[7, column].Num, Grid[8, column].Num };
         }
 
         /// <summary>
@@ -355,18 +366,7 @@ namespace SudokuSolver
             return num;
         }
 
-        /// <summary>
-        /// Gets a row in the puzzle
-        /// </summary>
-        /// <param name="column">the row that will be gotten</param>
-        /// <returns>An array of the number</returns>
-        private int[] GetColumn(int column)
-        {
-            return new int[] {Grid[0, column].Num, Grid[1, column].Num, Grid[2, column].Num,
-                              Grid[3, column].Num, Grid[4, column].Num, Grid[5, column].Num,
-                              Grid[6, column].Num, Grid[7, column].Num, Grid[8, column].Num,
-                              Grid[9, column].Num};
-        }
+        
 
         private void PrintGrid()
         {
