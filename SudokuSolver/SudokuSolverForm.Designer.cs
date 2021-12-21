@@ -1,7 +1,7 @@
 ﻿
 namespace SudokuSolver
 {
-    partial class Form1
+    partial class SudokuSolverForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace SudokuSolver
         private void InitializeComponent()
         {
             this.submitButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.row1column1TextBox = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -122,12 +122,12 @@ namespace SudokuSolver
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // row1column1TextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(27, 22);
-            this.textBox1.TabIndex = 1;
+            this.row1column1TextBox.Location = new System.Drawing.Point(12, 12);
+            this.row1column1TextBox.Name = "row1column1TextBox";
+            this.row1column1TextBox.Size = new System.Drawing.Size(27, 22);
+            this.row1column1TextBox.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -689,7 +689,7 @@ namespace SudokuSolver
             this.textBox81.Size = new System.Drawing.Size(27, 22);
             this.textBox81.TabIndex = 9;
             // 
-            // Form1
+            // SudokuSolverForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -774,9 +774,9 @@ namespace SudokuSolver
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.row1column1TextBox);
             this.Controls.Add(this.submitButton);
-            this.Name = "Form1";
+            this.Name = "SudokuSolverForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -786,7 +786,7 @@ namespace SudokuSolver
         #endregion
 
         private System.Windows.Forms.Button submitButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox row1column1TextBox;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
