@@ -47,7 +47,14 @@ namespace SudokuSolver
             };
 
             TopLeft = new List<Cell>();
-
+            TopMid = new List<Cell>();
+            TopRight = new List<Cell>();
+            MidLeft = new List<Cell>();
+            Mid = new List<Cell>();
+            MidRight = new List<Cell>();
+            BottomLeft = new List<Cell>();
+            BottomMid = new List<Cell>();
+            BottomRight = new List<Cell>();
 
             TopLeft.Add(Grid[0, 0]);
             TopLeft.Add(Grid[0, 1]);
