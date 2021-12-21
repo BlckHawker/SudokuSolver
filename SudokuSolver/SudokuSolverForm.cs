@@ -152,28 +152,38 @@ namespace SudokuSolver
                 MessageBox.Show("Text boxes can only be numbers", "Unable to solve", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            SudokuSolver solver = new SudokuSolver(
+                row1Column1, row1Column2, row1Column3, row1Column4, row1Column5, row1Column6, row1Column7, row1Column8, row1Column9,
+                row2Column1, row2Column2, row2Column3, row2Column4, row2Column5, row2Column6, row2Column7, row2Column8, row2Column9,
+                row3Column1, row3Column2, row3Column3, row3Column4, row3Column5, row3Column6, row3Column7, row3Column8, row3Column9,
+                row4Column1, row4Column2, row4Column3, row4Column4, row4Column5, row4Column6, row4Column7, row4Column8, row4Column9,
+                row5Column1, row5Column2, row5Column3, row5Column4, row5Column5, row5Column6, row5Column7, row5Column8, row5Column9,
+                row6Column1, row6Column2, row6Column3, row6Column4, row6Column5, row6Column6, row6Column7, row6Column8, row6Column9,
+                row7Column1, row7Column2, row7Column3, row7Column4, row7Column5, row7Column6, row7Column7, row7Column8, row7Column9,
+                row8Column1, row8Column2, row8Column3, row8Column4, row8Column5, row8Column6, row8Column7, row8Column8, row8Column9,
+                row9Column1, row9Column2, row9Column3, row9Column4, row9Column5, row9Column6, row9Column7, row9Column8, row9Column9);
 
 
         }
 
         /// <summary>
-        /// Tells if a string contains one character
+        /// Tells if a string contains one character or less
         /// </summary>
         /// <param name="str">the str that will be checked</param>
-        /// <returns>true of there is one character in the string</returns>
+        /// <returns>true if there at most one character in the string</returns>
         private bool OneChar(string str)
         {
-            return str.Length == 1;
+            return str.Length <= 1;
         }
 
         /// <summary>
         /// Tells if string is a number
         /// </summary>
         /// <param name="str">the str that will be checked</param>
-        /// <returns>true if the string is a number</returns>
+        /// <returns>true if the string is a number between 1 and 9</returns>
         private bool NumberOnly(string str)
         {
-            return str[0] <= 48 && str[0] >= 57;
+            return str[0] <= 49 && str[0] >= 57;
         }
     }
 }
