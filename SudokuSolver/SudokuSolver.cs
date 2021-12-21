@@ -171,11 +171,18 @@ namespace SudokuSolver
         {
             PrintGrid();
 
+            Console.WriteLine("\nChecking to see if this puzzle is valid\n");
+
             //check to see if the puzzle is valid
             if (!ValidPuzzle())
             {
+                Console.WriteLine("\nPuzzle is invalid\n");
                 return;
             }
+
+            Console.WriteLine("\nPuzzle is valid\n");
+
+            Console.WriteLine("Finding all possible numbers\n");
 
             FindPossibleNumbers();
         }
@@ -220,6 +227,8 @@ namespace SudokuSolver
 
                     //make sure there are no duplicates
                     Grid[row, column].PossibleNumbers = Grid[row, column].PossibleNumbers.Distinct().ToList();
+
+                    Console.WriteLine($"Row {row} Column {column} Possible numbers: {string.Join(", ",Grid[row,column].PossibleNumbers)}\n");
                 }
 
             }
