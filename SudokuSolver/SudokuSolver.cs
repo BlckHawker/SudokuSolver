@@ -367,14 +367,16 @@ namespace SudokuSolver
         }
 
         
-
+        /// <summary>
+        /// Prints a representation of a grid with a 0 repersenting an emtpy cell
+        /// </summary>
         private void PrintGrid()
         {
             for (int row = 0; row < 9; row++)
             {
                 for (int column = 0; column < 9; column++)
                 {
-                    Console.Write(Grid[row, column] + " ");
+                    Console.Write(Grid[row, column].Num + " ");
                 }
 
                 Console.WriteLine();
