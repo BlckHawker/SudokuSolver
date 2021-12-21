@@ -134,105 +134,105 @@ namespace SudokuSolver
             this.textBox2.Location = new System.Drawing.Point(12, 40);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(27, 22);
-            this.textBox2.TabIndex = 2;
+            this.textBox2.TabIndex = 10;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(12, 68);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(27, 22);
-            this.textBox3.TabIndex = 3;
+            this.textBox3.TabIndex = 19;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(12, 96);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(27, 22);
-            this.textBox4.TabIndex = 4;
+            this.textBox4.TabIndex = 28;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(12, 124);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(27, 22);
-            this.textBox5.TabIndex = 5;
+            this.textBox5.TabIndex = 37;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(12, 152);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(27, 22);
-            this.textBox6.TabIndex = 6;
+            this.textBox6.TabIndex = 46;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(12, 180);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(27, 22);
-            this.textBox7.TabIndex = 7;
+            this.textBox7.TabIndex = 55;
             // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(12, 208);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(27, 22);
-            this.textBox8.TabIndex = 8;
+            this.textBox8.TabIndex = 64;
             // 
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(12, 236);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(27, 22);
-            this.textBox9.TabIndex = 9;
+            this.textBox9.TabIndex = 73;
             // 
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(45, 236);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(27, 22);
-            this.textBox10.TabIndex = 18;
+            this.textBox10.TabIndex = 74;
             // 
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(45, 208);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(27, 22);
-            this.textBox11.TabIndex = 17;
+            this.textBox11.TabIndex = 65;
             // 
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(45, 180);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(27, 22);
-            this.textBox12.TabIndex = 16;
+            this.textBox12.TabIndex = 56;
             // 
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(45, 152);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(27, 22);
-            this.textBox13.TabIndex = 15;
+            this.textBox13.TabIndex = 47;
             // 
             // textBox14
             // 
             this.textBox14.Location = new System.Drawing.Point(45, 124);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(27, 22);
-            this.textBox14.TabIndex = 14;
+            this.textBox14.TabIndex = 38;
             // 
             // textBox15
             // 
             this.textBox15.Location = new System.Drawing.Point(45, 96);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(27, 22);
-            this.textBox15.TabIndex = 13;
+            this.textBox15.TabIndex = 29;
             // 
             // textBox16
             // 
             this.textBox16.Location = new System.Drawing.Point(45, 68);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(27, 22);
-            this.textBox16.TabIndex = 12;
+            this.textBox16.TabIndex = 20;
             // 
             // textBox17
             // 
@@ -246,49 +246,49 @@ namespace SudokuSolver
             this.textBox18.Location = new System.Drawing.Point(45, 12);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(27, 22);
-            this.textBox18.TabIndex = 10;
+            this.textBox18.TabIndex = 2;
             // 
             // textBox19
             // 
             this.textBox19.Location = new System.Drawing.Point(78, 236);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(27, 22);
-            this.textBox19.TabIndex = 27;
+            this.textBox19.TabIndex = 75;
             // 
             // textBox20
             // 
             this.textBox20.Location = new System.Drawing.Point(78, 208);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(27, 22);
-            this.textBox20.TabIndex = 26;
+            this.textBox20.TabIndex = 66;
             // 
             // textBox21
             // 
             this.textBox21.Location = new System.Drawing.Point(78, 180);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(27, 22);
-            this.textBox21.TabIndex = 25;
+            this.textBox21.TabIndex = 57;
             // 
             // textBox22
             // 
             this.textBox22.Location = new System.Drawing.Point(78, 152);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(27, 22);
-            this.textBox22.TabIndex = 24;
+            this.textBox22.TabIndex = 48;
             // 
             // textBox23
             // 
             this.textBox23.Location = new System.Drawing.Point(78, 124);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(27, 22);
-            this.textBox23.TabIndex = 23;
+            this.textBox23.TabIndex = 39;
             // 
             // textBox24
             // 
             this.textBox24.Location = new System.Drawing.Point(78, 96);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(27, 22);
-            this.textBox24.TabIndex = 22;
+            this.textBox24.TabIndex = 30;
             // 
             // textBox25
             // 
@@ -302,49 +302,49 @@ namespace SudokuSolver
             this.textBox26.Location = new System.Drawing.Point(78, 40);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(27, 22);
-            this.textBox26.TabIndex = 20;
+            this.textBox26.TabIndex = 12;
             // 
             // textBox27
             // 
             this.textBox27.Location = new System.Drawing.Point(78, 12);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(27, 22);
-            this.textBox27.TabIndex = 19;
+            this.textBox27.TabIndex = 3;
             // 
             // textBox28
             // 
             this.textBox28.Location = new System.Drawing.Point(111, 236);
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(27, 22);
-            this.textBox28.TabIndex = 36;
+            this.textBox28.TabIndex = 76;
             // 
             // textBox29
             // 
             this.textBox29.Location = new System.Drawing.Point(111, 208);
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(27, 22);
-            this.textBox29.TabIndex = 35;
+            this.textBox29.TabIndex = 67;
             // 
             // textBox30
             // 
             this.textBox30.Location = new System.Drawing.Point(111, 180);
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(27, 22);
-            this.textBox30.TabIndex = 34;
+            this.textBox30.TabIndex = 58;
             // 
             // textBox31
             // 
             this.textBox31.Location = new System.Drawing.Point(111, 152);
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(27, 22);
-            this.textBox31.TabIndex = 33;
+            this.textBox31.TabIndex = 49;
             // 
             // textBox32
             // 
             this.textBox32.Location = new System.Drawing.Point(111, 124);
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(27, 22);
-            this.textBox32.TabIndex = 32;
+            this.textBox32.TabIndex = 40;
             // 
             // textBox33
             // 
@@ -358,49 +358,49 @@ namespace SudokuSolver
             this.textBox34.Location = new System.Drawing.Point(111, 68);
             this.textBox34.Name = "textBox34";
             this.textBox34.Size = new System.Drawing.Size(27, 22);
-            this.textBox34.TabIndex = 30;
+            this.textBox34.TabIndex = 22;
             // 
             // textBox35
             // 
             this.textBox35.Location = new System.Drawing.Point(111, 40);
             this.textBox35.Name = "textBox35";
             this.textBox35.Size = new System.Drawing.Size(27, 22);
-            this.textBox35.TabIndex = 29;
+            this.textBox35.TabIndex = 13;
             // 
             // textBox36
             // 
             this.textBox36.Location = new System.Drawing.Point(111, 12);
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(27, 22);
-            this.textBox36.TabIndex = 28;
+            this.textBox36.TabIndex = 4;
             // 
             // textBox37
             // 
             this.textBox37.Location = new System.Drawing.Point(144, 236);
             this.textBox37.Name = "textBox37";
             this.textBox37.Size = new System.Drawing.Size(27, 22);
-            this.textBox37.TabIndex = 45;
+            this.textBox37.TabIndex = 77;
             // 
             // textBox38
             // 
             this.textBox38.Location = new System.Drawing.Point(144, 208);
             this.textBox38.Name = "textBox38";
             this.textBox38.Size = new System.Drawing.Size(27, 22);
-            this.textBox38.TabIndex = 44;
+            this.textBox38.TabIndex = 68;
             // 
             // textBox39
             // 
             this.textBox39.Location = new System.Drawing.Point(144, 180);
             this.textBox39.Name = "textBox39";
             this.textBox39.Size = new System.Drawing.Size(27, 22);
-            this.textBox39.TabIndex = 43;
+            this.textBox39.TabIndex = 59;
             // 
             // textBox40
             // 
             this.textBox40.Location = new System.Drawing.Point(144, 152);
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(27, 22);
-            this.textBox40.TabIndex = 42;
+            this.textBox40.TabIndex = 50;
             // 
             // textBox41
             // 
@@ -414,49 +414,49 @@ namespace SudokuSolver
             this.textBox42.Location = new System.Drawing.Point(144, 96);
             this.textBox42.Name = "textBox42";
             this.textBox42.Size = new System.Drawing.Size(27, 22);
-            this.textBox42.TabIndex = 40;
+            this.textBox42.TabIndex = 32;
             // 
             // textBox43
             // 
             this.textBox43.Location = new System.Drawing.Point(144, 68);
             this.textBox43.Name = "textBox43";
             this.textBox43.Size = new System.Drawing.Size(27, 22);
-            this.textBox43.TabIndex = 39;
+            this.textBox43.TabIndex = 23;
             // 
             // textBox44
             // 
             this.textBox44.Location = new System.Drawing.Point(144, 40);
             this.textBox44.Name = "textBox44";
             this.textBox44.Size = new System.Drawing.Size(27, 22);
-            this.textBox44.TabIndex = 38;
+            this.textBox44.TabIndex = 14;
             // 
             // textBox45
             // 
             this.textBox45.Location = new System.Drawing.Point(144, 12);
             this.textBox45.Name = "textBox45";
             this.textBox45.Size = new System.Drawing.Size(27, 22);
-            this.textBox45.TabIndex = 37;
+            this.textBox45.TabIndex = 5;
             // 
             // textBox46
             // 
             this.textBox46.Location = new System.Drawing.Point(177, 236);
             this.textBox46.Name = "textBox46";
             this.textBox46.Size = new System.Drawing.Size(27, 22);
-            this.textBox46.TabIndex = 54;
+            this.textBox46.TabIndex = 78;
             // 
             // textBox47
             // 
             this.textBox47.Location = new System.Drawing.Point(177, 208);
             this.textBox47.Name = "textBox47";
             this.textBox47.Size = new System.Drawing.Size(27, 22);
-            this.textBox47.TabIndex = 53;
+            this.textBox47.TabIndex = 69;
             // 
             // textBox48
             // 
             this.textBox48.Location = new System.Drawing.Point(177, 180);
             this.textBox48.Name = "textBox48";
             this.textBox48.Size = new System.Drawing.Size(27, 22);
-            this.textBox48.TabIndex = 52;
+            this.textBox48.TabIndex = 60;
             // 
             // textBox49
             // 
@@ -470,49 +470,49 @@ namespace SudokuSolver
             this.textBox50.Location = new System.Drawing.Point(177, 124);
             this.textBox50.Name = "textBox50";
             this.textBox50.Size = new System.Drawing.Size(27, 22);
-            this.textBox50.TabIndex = 50;
+            this.textBox50.TabIndex = 42;
             // 
             // textBox51
             // 
             this.textBox51.Location = new System.Drawing.Point(177, 96);
             this.textBox51.Name = "textBox51";
             this.textBox51.Size = new System.Drawing.Size(27, 22);
-            this.textBox51.TabIndex = 49;
+            this.textBox51.TabIndex = 33;
             // 
             // textBox52
             // 
             this.textBox52.Location = new System.Drawing.Point(177, 68);
             this.textBox52.Name = "textBox52";
             this.textBox52.Size = new System.Drawing.Size(27, 22);
-            this.textBox52.TabIndex = 48;
+            this.textBox52.TabIndex = 24;
             // 
             // textBox53
             // 
             this.textBox53.Location = new System.Drawing.Point(177, 40);
             this.textBox53.Name = "textBox53";
             this.textBox53.Size = new System.Drawing.Size(27, 22);
-            this.textBox53.TabIndex = 47;
+            this.textBox53.TabIndex = 15;
             // 
             // textBox54
             // 
             this.textBox54.Location = new System.Drawing.Point(177, 12);
             this.textBox54.Name = "textBox54";
             this.textBox54.Size = new System.Drawing.Size(27, 22);
-            this.textBox54.TabIndex = 46;
+            this.textBox54.TabIndex = 6;
             // 
             // textBox55
             // 
             this.textBox55.Location = new System.Drawing.Point(210, 236);
             this.textBox55.Name = "textBox55";
             this.textBox55.Size = new System.Drawing.Size(27, 22);
-            this.textBox55.TabIndex = 63;
+            this.textBox55.TabIndex = 79;
             // 
             // textBox56
             // 
             this.textBox56.Location = new System.Drawing.Point(210, 208);
             this.textBox56.Name = "textBox56";
             this.textBox56.Size = new System.Drawing.Size(27, 22);
-            this.textBox56.TabIndex = 62;
+            this.textBox56.TabIndex = 70;
             // 
             // textBox57
             // 
@@ -526,49 +526,49 @@ namespace SudokuSolver
             this.textBox58.Location = new System.Drawing.Point(210, 152);
             this.textBox58.Name = "textBox58";
             this.textBox58.Size = new System.Drawing.Size(27, 22);
-            this.textBox58.TabIndex = 60;
+            this.textBox58.TabIndex = 52;
             // 
             // textBox59
             // 
             this.textBox59.Location = new System.Drawing.Point(210, 124);
             this.textBox59.Name = "textBox59";
             this.textBox59.Size = new System.Drawing.Size(27, 22);
-            this.textBox59.TabIndex = 59;
+            this.textBox59.TabIndex = 43;
             // 
             // textBox60
             // 
             this.textBox60.Location = new System.Drawing.Point(210, 96);
             this.textBox60.Name = "textBox60";
             this.textBox60.Size = new System.Drawing.Size(27, 22);
-            this.textBox60.TabIndex = 58;
+            this.textBox60.TabIndex = 34;
             // 
             // textBox61
             // 
             this.textBox61.Location = new System.Drawing.Point(210, 68);
             this.textBox61.Name = "textBox61";
             this.textBox61.Size = new System.Drawing.Size(27, 22);
-            this.textBox61.TabIndex = 57;
+            this.textBox61.TabIndex = 25;
             // 
             // textBox62
             // 
             this.textBox62.Location = new System.Drawing.Point(210, 40);
             this.textBox62.Name = "textBox62";
             this.textBox62.Size = new System.Drawing.Size(27, 22);
-            this.textBox62.TabIndex = 56;
+            this.textBox62.TabIndex = 16;
             // 
             // textBox63
             // 
             this.textBox63.Location = new System.Drawing.Point(210, 12);
             this.textBox63.Name = "textBox63";
             this.textBox63.Size = new System.Drawing.Size(27, 22);
-            this.textBox63.TabIndex = 55;
+            this.textBox63.TabIndex = 7;
             // 
             // textBox64
             // 
             this.textBox64.Location = new System.Drawing.Point(243, 236);
             this.textBox64.Name = "textBox64";
             this.textBox64.Size = new System.Drawing.Size(27, 22);
-            this.textBox64.TabIndex = 72;
+            this.textBox64.TabIndex = 80;
             // 
             // textBox65
             // 
@@ -582,49 +582,49 @@ namespace SudokuSolver
             this.textBox66.Location = new System.Drawing.Point(243, 180);
             this.textBox66.Name = "textBox66";
             this.textBox66.Size = new System.Drawing.Size(27, 22);
-            this.textBox66.TabIndex = 70;
+            this.textBox66.TabIndex = 62;
             // 
             // textBox67
             // 
             this.textBox67.Location = new System.Drawing.Point(243, 152);
             this.textBox67.Name = "textBox67";
             this.textBox67.Size = new System.Drawing.Size(27, 22);
-            this.textBox67.TabIndex = 69;
+            this.textBox67.TabIndex = 53;
             // 
             // textBox68
             // 
             this.textBox68.Location = new System.Drawing.Point(243, 124);
             this.textBox68.Name = "textBox68";
             this.textBox68.Size = new System.Drawing.Size(27, 22);
-            this.textBox68.TabIndex = 68;
+            this.textBox68.TabIndex = 44;
             // 
             // textBox69
             // 
             this.textBox69.Location = new System.Drawing.Point(243, 96);
             this.textBox69.Name = "textBox69";
             this.textBox69.Size = new System.Drawing.Size(27, 22);
-            this.textBox69.TabIndex = 67;
+            this.textBox69.TabIndex = 35;
             // 
             // textBox70
             // 
             this.textBox70.Location = new System.Drawing.Point(243, 68);
             this.textBox70.Name = "textBox70";
             this.textBox70.Size = new System.Drawing.Size(27, 22);
-            this.textBox70.TabIndex = 66;
+            this.textBox70.TabIndex = 26;
             // 
             // textBox71
             // 
             this.textBox71.Location = new System.Drawing.Point(243, 40);
             this.textBox71.Name = "textBox71";
             this.textBox71.Size = new System.Drawing.Size(27, 22);
-            this.textBox71.TabIndex = 65;
+            this.textBox71.TabIndex = 17;
             // 
             // textBox72
             // 
             this.textBox72.Location = new System.Drawing.Point(243, 12);
             this.textBox72.Name = "textBox72";
             this.textBox72.Size = new System.Drawing.Size(27, 22);
-            this.textBox72.TabIndex = 64;
+            this.textBox72.TabIndex = 8;
             // 
             // textBox73
             // 
@@ -638,56 +638,56 @@ namespace SudokuSolver
             this.textBox74.Location = new System.Drawing.Point(276, 208);
             this.textBox74.Name = "textBox74";
             this.textBox74.Size = new System.Drawing.Size(27, 22);
-            this.textBox74.TabIndex = 80;
+            this.textBox74.TabIndex = 72;
             // 
             // textBox75
             // 
             this.textBox75.Location = new System.Drawing.Point(276, 180);
             this.textBox75.Name = "textBox75";
             this.textBox75.Size = new System.Drawing.Size(27, 22);
-            this.textBox75.TabIndex = 79;
+            this.textBox75.TabIndex = 63;
             // 
             // textBox76
             // 
             this.textBox76.Location = new System.Drawing.Point(276, 152);
             this.textBox76.Name = "textBox76";
             this.textBox76.Size = new System.Drawing.Size(27, 22);
-            this.textBox76.TabIndex = 78;
+            this.textBox76.TabIndex = 54;
             // 
             // textBox77
             // 
             this.textBox77.Location = new System.Drawing.Point(276, 124);
             this.textBox77.Name = "textBox77";
             this.textBox77.Size = new System.Drawing.Size(27, 22);
-            this.textBox77.TabIndex = 77;
+            this.textBox77.TabIndex = 45;
             // 
             // textBox78
             // 
             this.textBox78.Location = new System.Drawing.Point(276, 96);
             this.textBox78.Name = "textBox78";
             this.textBox78.Size = new System.Drawing.Size(27, 22);
-            this.textBox78.TabIndex = 76;
+            this.textBox78.TabIndex = 36;
             // 
             // textBox79
             // 
             this.textBox79.Location = new System.Drawing.Point(276, 68);
             this.textBox79.Name = "textBox79";
             this.textBox79.Size = new System.Drawing.Size(27, 22);
-            this.textBox79.TabIndex = 75;
+            this.textBox79.TabIndex = 27;
             // 
             // textBox80
             // 
             this.textBox80.Location = new System.Drawing.Point(276, 40);
             this.textBox80.Name = "textBox80";
             this.textBox80.Size = new System.Drawing.Size(27, 22);
-            this.textBox80.TabIndex = 74;
+            this.textBox80.TabIndex = 18;
             // 
             // textBox81
             // 
             this.textBox81.Location = new System.Drawing.Point(276, 12);
             this.textBox81.Name = "textBox81";
             this.textBox81.Size = new System.Drawing.Size(27, 22);
-            this.textBox81.TabIndex = 73;
+            this.textBox81.TabIndex = 9;
             // 
             // Form1
             // 
